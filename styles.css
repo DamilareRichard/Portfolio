@@ -5,6 +5,8 @@
 -moz-
 -webkit-
 -o-
+margin: 0;
+padding: 0;
 box-sizing: border-box;
 }
  body{
@@ -21,6 +23,7 @@ box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
 	padding: 35px;
+
 }
 .left-side{
 	display: flex;
@@ -37,7 +40,7 @@ box-sizing: border-box;
 	}
 	.nav-link-wrapper a{
 		font-family: 'Montserrat', sans-serif;
-		color: grey;
+		color: #FF9933;
 		text-decoration: none;
 		transition: color 0.5s; 
 	}
@@ -50,7 +53,7 @@ box-sizing: border-box;
 	}
       
       .nav-wrapper > .right-side > div{
-
+      	color: #FF9933;
       	font-family:'Montserrat', sans-serif;
       }
       .active-nav-link{
@@ -81,11 +84,9 @@ box-sizing: border-box;
 		top: 0;
 		display: flex;
 		flex-direction:column;
-		justify-content: flex-start;
-		align-items: flex-start;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
-		margin-top: 10px;
-		margin-left: -100px;
 		text-align: center;
 		padding-left: 100px;
 		padding-right: 100px;
@@ -115,37 +116,59 @@ box-sizing: border-box;
 
 	/*About page*/
 	.two-column-wrapper{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-wrap: wrap;
+
 	}
 	.profile-image-wrapper img{
 		width: 100%;
+		position: absolute;
+
 
 	}
 	.profile-content-wrapper{
+		width: 100%
 		padding: 30px;
+		text-align: center;
+		margin-top: 500px;
 	}
 	.profile-content-wrapper h1{
-		color: lightseagreen;
+		padding: 40px;
+		position: relative;
+		color: darkseagreen;
 		font-family: 'Montserrat', sans-serif;
 	}
 
 	.profile-content-wrapper p{
-
-		font-family: 'Montserrat', sans-serif;
+		position: relative;
+		color: #000000;
 		font-size: 20px;
+		margin: auto;
+		width: 50%;
+		line-height: 1.5;
+		vertical-align: middle;
+		font-family: 'Montserrat', sans-serif;
+		overflow: hidden;
+        text-overflow: clip;
+
 	}
 	
 	@media screen and (max-width: 600px) {
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
  .nav-wrapper .nav-link-wrapper {
   margin-bottom: 10px;
 }
   .portfolio-items-wrapper{
-    flex-flow: row wrap;
-  }
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	}
   .portfolio-img-background {
-    flex-basis: 100%;
+    width: 100%;
   }
   .logo-wrapper img{
-  	flex-basis: 100%;
+  	width: 50%;
   }
