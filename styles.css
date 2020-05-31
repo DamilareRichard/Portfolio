@@ -57,11 +57,11 @@ box-sizing: border-box;
       	font-family:'Montserrat', sans-serif;
       }
       .active-nav-link{
+     
       	border-bottom: 1px solid #000000;
-      }
-      .active-nav-link{
       	color: #000000 !important
       }
+      
 	/*Portfolio styles*/
 	.portfolio-items-wrapper{
 		display: grid;
@@ -113,45 +113,6 @@ box-sizing: border-box;
 		transition: 1s;
 		filter: brightness(10%);
 	}
-
-	/*About page*/
-	.two-column-wrapper{
-		display: flex;
-		flex-wrap: wrap;
-
-	}
-	.profile-image-wrapper img{
-		width: 100%;
-		position: absolute;
-
-
-	}
-	.profile-content-wrapper{
-		width: 100%
-		padding: 30px;
-		text-align: center;
-		margin-top: 500px;
-	}
-	.profile-content-wrapper h1{
-		padding: 40px;
-		position: relative;
-		color: darkseagreen;
-		font-family: 'Montserrat', sans-serif;
-	}
-
-	.profile-content-wrapper p{
-		position: relative;
-		color: #000000;
-		font-size: 30px;
-		margin: auto;
-		width: 50%;
-		line-height: 1.5;
-		vertical-align: middle;
-		font-family: 'Montserrat', sans-serif;
-		overflow: hidden;
-        text-overflow: clip;
-
-	}
 	
 	@media screen and (max-width: 600px) {
 
@@ -159,16 +120,26 @@ box-sizing: border-box;
 	display: grid;
 	grid-template-columns: 1fr;
 }
- .nav-wrapper .nav-link-wrapper {
-  margin-bottom: 10px;
+ .nav-wrapper {
+ 	margin: 10px;
+ 	padding: 10px;  
+}
+
+.nav-wrapper > .left-side > div{
+	font-size: 70%;
+}
+
+.nav-wrapper > .right-side > div{
+	font-size: 70%;
 }
   .portfolio-items-wrapper{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: block;
+	
 	}
+.active-nav-link{
+	margin: 0;
+}
   .portfolio-img-background {
     width: 100%;
   }
-  .logo-wrapper img{
-  	width: 50%;
-  }
+  

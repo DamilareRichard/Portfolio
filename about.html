@@ -5,6 +5,84 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
+<style>
+	
+.two-column-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	.profile-image-wrapper img{
+		width: 100%;
+		position: absolute;
+
+
+	}
+	.profile-content-wrapper{
+		width: 100%
+		padding: 30px;
+		text-align: left;
+		margin-top: 350px;
+	}
+	.profile-content-wrapper h1{
+		padding: 40px;
+		position: relative;
+		color:#2948ff;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.profile-content-wrapper p{
+		position: relative;
+		color: #FF9933;
+		font-size: 24px;
+		/*font-weight: bold;*/
+		margin: 10px;
+		width: 50%;
+		line-height: 45px;
+		vertical-align: middle;
+		font-family: 'Montserrat', sans-serif;
+		overflow: hidden;
+        text-overflow: clip;
+
+	}
+
+@media screen and (max-width: 600px) {
+
+	.profile-content-wrapper{
+		padding: 7px;
+		margin-top: 5px;
+		font-size: 14px;
+		
+	}
+
+	.profile-image-wrapper img{
+		width: 100%;
+		position: relative;
+
+
+	}
+	.profile-content-wrapper h1{
+		padding: 25px;
+		display: block;
+		box-sizing: border-box;
+	}
+	.profile-content-wrapper p {
+		width: 100%;
+		box-sizing: border-box;
+		line-height: normal;
+		font-size: 16px; 
+		margin: 5px;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+
+
+}
+
+
+
+</style>
 <body>
 	<div class="container">
 		<div class="nav-wrapper">
@@ -25,11 +103,11 @@
 	 <div class="content-wrapper">
 	   	<div class="two-column-wrapper">
 	   		<div class="profile-image-wrapper">
-	   			<img src="darey.jpg">
+	   			<img src="images/damilare.jpg" alt="">
 	   		</div>
 	   		<div class="profile-content-wrapper">
 	   			<h1>Hi, thank you for visiting my site.</h1>
-	   			<p>With just about 3months of web development experience, I'm still testing out my footing in HTML5, CSS3 and a bit of Javascript.</p> <br> <br>
+	   			<p>With just about 3months of web development experience, I'm still testing out my footing in HTML5, CSS3 and a bit of Javascript.</p> <br> 
 	   			<p>For this reason, I decided to utilize this design to come up with a completely different portfolio. It's my desire to add value, to build apps and websites; that solve problems by creating solutions.</p>
 	   		</div>
 	   	</div>	
