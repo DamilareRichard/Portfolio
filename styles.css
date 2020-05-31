@@ -57,7 +57,7 @@ box-sizing: border-box;
       	font-family:'Montserrat', sans-serif;
       }
       .active-nav-link{
-     
+
       	border-bottom: 1px solid #000000;
       	color: #000000 !important
       }
@@ -110,7 +110,7 @@ box-sizing: border-box;
 	}
 
 	.img-darken{
-		transition: 1s;
+		transition: all 1s ease;
 		filter: brightness(10%);
 	}
 	
