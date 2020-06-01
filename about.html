@@ -7,7 +7,73 @@
 </head>
 
 <style>
-	
+
+
+	*{
+-moz-
+-webkit-
+-o-
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+ body{
+	margin: 0px;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+
+.nav-wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 35px;
+
+}
+.left-side{
+	display: flex;
+}
+.nav-wrapper > .left-side > div{
+	margin-right: 25px;
+	font-size: 90%;
+	text-transform: uppercase;
+}
+	.nav-link-wrapper{
+		height:20px;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom 0.5s;
+		cursor: pointer;
+	}
+	.nav-link-wrapper a{
+		font-family: 'Montserrat', sans-serif;
+		color: #FF9933;
+		text-decoration: none;
+		transition: color 0.5s; 
+		cursor: pointer;
+	}
+	.nav-link-wrapper:hover{
+		border-bottom: 1px solid #000000;
+		cursor: pointer;
+	}
+
+	.nav-link-wrapper a:hover{
+		border-bottom: #000000;
+	}
+      
+      .nav-wrapper > .right-side > div{
+      	color: #FF9933;
+      	font-family:'Montserrat', sans-serif;
+      }
+      .active-nav-link{
+		cursor: pointer;
+      	border-bottom: 1px solid #000000;
+      	color: #000000 !important
+      }
+
 .two-column-wrapper{
 		display: flex;
 		flex-wrap: wrap;
@@ -20,14 +86,16 @@
 
 	}
 	.profile-content-wrapper{
-		width: 100%
+		width: 50%
 		padding: 30px;
-		text-align: left;
-		margin-top: 350px;
+		text-align: center;
+		margin-top: -140px;
 	}
 	.profile-content-wrapper h1{
 		padding: 40px;
 		position: relative;
+		top: 250px;
+		left: -50px;
 		color:#2948ff;
 		font-family: 'Montserrat', sans-serif;
 	}
@@ -35,11 +103,13 @@
 	.profile-content-wrapper p{
 		position: relative;
 		color: #FF9933;
-		font-size: 24px;
-		/*font-weight: bold;*/
-		margin: 10px;
+		font-size: 20px;
+		margin: 30px;
 		width: 50%;
-		line-height: 45px;
+		left: 270px;
+		top: 250px;
+		font-weight: 700;
+		line-height: 40px;
 		vertical-align: middle;
 		font-family: 'Montserrat', sans-serif;
 		overflow: hidden;
@@ -48,6 +118,20 @@
 	}
 
 @media screen and (max-width: 600px) {
+
+
+	 .nav-wrapper {
+ 	margin: 10px;
+ 	padding: 10px;  
+}
+
+.nav-wrapper > .left-side > div{
+	font-size: 70%;
+}
+
+.nav-wrapper > .right-side > div{
+	font-size: 70%;
+}
 
 	.profile-content-wrapper{
 		padding: 7px;
@@ -58,23 +142,28 @@
 
 	.profile-image-wrapper img{
 		width: 100%;
-		position: relative;
+		box-sizing: border-box;
 
 
 	}
 	.profile-content-wrapper h1{
-		padding: 25px;
+		padding: 10px;
 		display: block;
 		box-sizing: border-box;
+		color: #000;
+		left: 0px;
 	}
 	.profile-content-wrapper p {
 		width: 100%;
 		box-sizing: border-box;
 		line-height: normal;
 		font-size: 16px; 
+		font-weight: bold;
 		margin: 5px;
 		padding: 0;
+		left: 0px;
 		margin-bottom: 10px;
+		color: #FF9933;
 	}
 
 
@@ -103,11 +192,11 @@
 	 <div class="content-wrapper">
 	   	<div class="two-column-wrapper">
 	   		<div class="profile-image-wrapper">
-	   			<img src="images/damilare.jpg" alt="">
+	   			<img src="darey.jpg" alt="">
 	   		</div>
 	   		<div class="profile-content-wrapper">
 	   			<h1>Hi, thank you for visiting my site.</h1>
-	   			<p>With just about 3months of web development experience, I'm still testing out my footing in HTML5, CSS3 and a bit of Javascript.</p> <br> 
+	   			<p>With about 3months of web development experience, I'm still testing out my footing in HTML5, CSS3 and a bit of Javascript.</p> <br> 
 	   			<p>For this reason, I decided to utilize this design to come up with a completely different portfolio. It's my desire to add value, to build apps and websites; that solve problems by creating solutions.</p>
 	   		</div>
 	   	</div>	
