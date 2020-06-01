@@ -3,13 +3,13 @@
 <head>
 	<title>About Me</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	
 </head>
 
 <style>
 
 
-	*{
+*{
 -moz-
 -webkit-
 -o-
@@ -20,6 +20,7 @@ box-sizing: border-box;
 
  body{
 	margin: 0px;
+
 }
 
 .container{
@@ -37,6 +38,7 @@ box-sizing: border-box;
 .left-side{
 	display: flex;
 }
+
 .nav-wrapper > .left-side > div{
 	margin-right: 25px;
 	font-size: 90%;
@@ -80,36 +82,57 @@ box-sizing: border-box;
 
 	}
 	.profile-image-wrapper img{
-		width: 100%;
+		width: 40%;
+		top: 100px;
+		padding: 5px;
+		display: block;
 		position: absolute;
+		z-index: 1111;
 
 
 	}
 	.profile-content-wrapper{
 		width: 50%
-		padding: 30px;
+		padding: 10px;
 		text-align: center;
-		margin-top: -140px;
+		margin-left: 250px;
+		margin-top: -220px;
 	}
 	.profile-content-wrapper h1{
-		padding: 40px;
+		padding: 30px;
 		position: relative;
-		top: 250px;
-		left: -50px;
+		top: 200px;
+		left: 30px;
 		color:#2948ff;
 		font-family: 'Montserrat', sans-serif;
+	}
+
+	.profile-content-wrapper span{
+		position: relative;
+		color: #FF9933;
+		font-size: 16px;
+		margin: 10px;
+		width: 50%;
+		left: 30px;
+		top: 170px;
+		font-weight: 700;
+		line-height: 30px;
+		vertical-align: middle;
+		font-family: 'Montserrat', sans-serif;
+		/*overflow: hidden;*/
+        /*text-overflow: clip;*/
 	}
 
 	.profile-content-wrapper p{
 		position: relative;
 		color: #FF9933;
-		font-size: 20px;
-		margin: 30px;
+		font-size: 16px;
+		margin: 10px;
 		width: 50%;
-		left: 270px;
-		top: 250px;
+		left: 300px;
+		top: 200px;
 		font-weight: 700;
-		line-height: 40px;
+		line-height: 30px;
 		vertical-align: middle;
 		font-family: 'Montserrat', sans-serif;
 		overflow: hidden;
@@ -120,6 +143,7 @@ box-sizing: border-box;
 @media screen and (max-width: 600px) {
 
 
+	
 	 .nav-wrapper {
  	margin: 10px;
  	padding: 10px;  
@@ -133,42 +157,70 @@ box-sizing: border-box;
 	font-size: 70%;
 }
 
+
+	.two-column-wrapper{
+		display: block;
+		overflow: hidden;
+
+	}
 	.profile-content-wrapper{
-		padding: 7px;
+		padding: 4px;
 		margin-top: 5px;
 		font-size: 14px;
-		
+		width: 100%;
+		display: block;
 	}
 
 	.profile-image-wrapper img{
+		top: 70px;
 		width: 100%;
 		box-sizing: border-box;
 
 
 	}
 	.profile-content-wrapper h1{
-		padding: 10px;
-		display: block;
+		padding: 5px;
+		position: absolute;
 		box-sizing: border-box;
 		color: #000;
-		left: 0px;
+		top: 580px;
+		left: 10px;
+		text-align: left;
+		font-family: ;
+		font-size: 20px;
+	}
+
+	.profile-content-wrapper span {
+		width: 100%;
+		box-sizing: border-box;
+		line-height: 30px;
+		display: block;
+		padding: 10px 12px;
+		font-size: 16px;
+		font-weight: bold;
+		position: absolute;
+		top: 650px;
+		left: -10px;
+		text-align: center;
+		color: #FF9933;
+
 	}
 	.profile-content-wrapper p {
 		width: 100%;
 		box-sizing: border-box;
-		line-height: normal;
-		font-size: 16px; 
-		font-weight: bold;
-		margin: 5px;
-		padding: 0;
-		left: 0px;
-		margin-bottom: 10px;
+		line-height: 35px;
+		display: block;
+		padding: 10px 12px;
+		font-size: 16px;
+		position: absolute;
+		text-align: center;
+		top: 780px;
+		left: -10px;
 		color: #FF9933;
 	}
 
 
 }
-
 
 
 </style>
@@ -192,11 +244,11 @@ box-sizing: border-box;
 	 <div class="content-wrapper">
 	   	<div class="two-column-wrapper">
 	   		<div class="profile-image-wrapper">
-	   			<img src="darey.jpg" alt="">
+	   			<img src="img1.jpg" alt="">
 	   		</div>
 	   		<div class="profile-content-wrapper">
 	   			<h1>Hi, thank you for visiting my site.</h1>
-	   			<p>With about 3months of web development experience, I'm still testing out my footing in HTML5, CSS3 and a bit of Javascript.</p> <br> 
+	   			<span>With about 3months of web development experience, I'm still testing out <br> my footing in HTML5, CSS3 and a bit of Javascript.</span> <br> 
 	   			<p>For this reason, I decided to utilize this design to come up with a completely different portfolio. It's my desire to add value, to build apps and websites; that solve problems by creating solutions.</p>
 	   		</div>
 	   	</div>	
